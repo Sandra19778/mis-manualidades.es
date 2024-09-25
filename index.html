@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapas personalizadas, imanes, llaveros y abrebotellas únicos. Compra productos personalizados ideales para regalos y eventos">
+    <meta name="Keywords" content="chapas personalizadas, imanes, llaveros, abrebotellas, regalos, personalización">
+    <title>Personaliza tus chapas, imanes, y llaveros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               <li><a href="#home">Inicio</a></li>
+               <li><a href="#products">Productos</a></li>
+               <ul class="dropdown">
+                <li><a href="#chapas">Chapas Personalizadas</a></li>
+                <li><a href="#imanes">Imanes</a></li>
+                <li><a href="#llaveros">Llaveros</a></li>
+                <li><a href="#abrebotellas">Abrebotellas</a></li>
+
+               </ul>
+               <li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contacto</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Personaliza tus Chapas, Imanes y Llaveros</h1>
+        <p>Bienvenido a nuestra web , aqui encontrarás una amplia variedad de chpas, imanes, llaveros y abrebotellas todo personalizado . Nos especializamos en dar forma a tus ideas creando productos que no solo son originales, sino tambien significativos. Perfecto para evnetos regalos especiales o para añadir un toque personal a tu dia a dia , estan hechas con pasion y atencion al detalle</p>
+        <p>Medidas de 25,32,58</p>
+        <img src="Imagenes/img.jpg.jpg" alt="Productos Personalizados">
+    </section>
+    <section id="products">
+        <h2>Nuestros productos</h2>
+        <div id="chapas">
+            <h3>Chapas Personalizadas</h3>
+            <img src="Imagenes/img.jpg1.jpg" alt="Chapas Personalizadas">
+            <img src="Imagenes/img.jpg2.jpg" alt="Chapas Personalizadas">
+            <img src="Imagenes/img.jpg3.jpg" alt="Chapas Personalizadas">
+            <p>Nuestras chapas personalizadas son el detalle perfecto para expresar tu estilo unico y hacer una declaracion . Ofrecemos una amplia gama de colores , combinan creatividad y calidad ¡Haz qu etu mensaje brille y lleve contigo algo que te represente!</p>
+            <form id="form-chapas" action="/enviar" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre del Cliente :</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="texto-chapa">Texto de la Chapa:/<label>
+                <input type="text" id="texto-chapa" name="texto-chapa" placeholder="Texto que irá en la chapa" required>
+
+                <label for="color">Color de fondo :</label>
+                <input type="color" id="color" name="color" value="#ffffff">
+
+                <label for="imagen-chapa">Sube una imagen</label>
+                <input type="file" id="imagen-chapa" name="imagen-chapa" accept="image/*">
+
+                <label for="cantidad">Cantidad :</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="1000" value="1" required>
+
+                <input type="submit" value="Personalizar Chapa">
+            </form>
+  </div>
+  <div id="imanes">
+    <h3>Imanes</h3>
+    <img src="Imagenes/jpg1.jpg" alt="Imanes">
+    <img src="Imagenes/jpg.2.jpg" alt="Imanes">
+    <img src="Imagenes/jpg.3.jpg" alt="Imanes">
+    <p>Dale un toque especial a cualquier espacio con nuestros imanes personalizados . Perfecto para decorar tu nevera , oficina, o cualquier superficie metálica . Ideal para regalar , recordar un evento o simplemente para añadir un toque creativo a tu hogar , son pequeños detalles que hacen grandes diferencias ¡Haz que tus ideas se adhieran con estilo!</p>
+    <form id="form-imanes" action="/enviar" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Cliente :</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="texto-imanes">Texto en el imán :</label>
+        <input type="text" id="texto-imán" name="texto-imán" placeholder="Texto que irá en el Imán" required>
+
+        <label for="color">Color de fondo :</label>
+        <input type="color" id="color" name="color" value="#ffffff">
+
+        <label for="imagen-imanes">Sube una imagen</label>
+        <input type="file" id="imagen-imanes" name="imagen-imanes" accept="image/*">
+
+        <label for="cantidad">Cantidad :</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="1000" value="1" required>
+
+        <input type="submit" value="Personalizar Imán">
+    </form>
+  </div>
+  <div id="llaveros">
+    <h3>Llaveros</h3>
+    <img src="Imagenes/jpgl1.jpg" alt="Llaveros">
+    <img src="Imagenes/jpgl2.jpg" alt="Llaveros">
+    <img src="Imagenes/jpgl3.jpg" alt=Llaveros"">
+    <p>Nuestros llaveros personalizados son mucho más que un simple accesorio: son una forma única de llevar contigo tus recuerdos, mensajes o diseños favoritos ¡Lleva contigo lo que amas con nuestros llaveros personalizados , donde cada detalle cuenta!</p>
+    <form id="form-llaveros" action="/enviar" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Cliente :</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="texto-llavero">Texto en el Llavero :</label>
+        <input type="text" id="texto-llavero" name="texto-llavero" placeholder="Texto que irá en el llavero" required>
+
+        <label for="color">Color de fondo :</label>
+        <input type="color" id="color" name="color" value="#ffffff">
+
+        <label for="imagen-llavero">Sube una imagen</label>
+        <input type="file" id="imagen-llavero" name="imagen-llavero" accept="image/*">
+
+        <label for="cantidad">Cantidad :</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="1000" value="1" required>
+
+        <input type="submit" value="Personalizar Llavero">
+    </form>
+  </div>
+  <div id="abrebotellas">
+    <h3>Abrebotellas</h3>
+    <img src="Imagenes/imga1.jpg" alt="Abrebotellas">
+    <img src="Imagenes/imga2.jpg" alt="Abrebotellas">
+    <img src="Imagenes/imga3.jpg" alt="Abrebotellas">
+    <p>Nuestros abrebotellas personalizado combinan funcionalidad y estilo, convirtiendo un accesorio cotidiano en una pieza unica ¡Haz que abrir una botella sea un momento especial , hechos para destacar en cualquier ocasion!</p>
+    <form id="form-abrebotellas" action="/enviar" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Cliente :</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="texto-abrebotellas">Texto en el Abrebotellas:</label>
+        <input type="text" id="texto-abrebotellas" name="texto-abrebotellas" placeholder="Texto en el Abrebotellas:" required>
+
+        <label for="color">Color de fondo :</label>
+        <input type="color" id="color" name="color" value="#ffffff">
+
+        <label for="imagen-abrebotellas">Sube una imagen</label>
+        <input type="file" id="imagen-abrebotellas" name="imagen-abrebotellas" accept="image/*">
+
+        <label for="cantidad">Cantidad :</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="1000" value="1" required>
+
+        <input type="submit" value="Personalizar Abrebotellas">
+    </form>
+
+  </div>
+    </section>
+    <section id="blog">
+        <h2>Ultimos posts</h2>
+        <article>
+            <h3>Cómo personalizar tus productos para eventos especiales </h3>
+            <p>¿Tienes un evento especial?</p>
+            <p>¡Haz que sea inolvidable con productos personalizados!</p>
+            <p>Desde bodas y hasta eventos especiales</p>
+            <p>No solo son detalles practicos , sino que tambien hacen que sea aun mas memorable ¡Animate a crear algo unico y haz que cada momento cuente!</p>
+            </article>
+       </section>
+       <section id="contact">
+        <h2>Contacto</h2>
+        <p>Para mas información o consultas, contáctanos en nuestras redes sociales o a traves del formulario</p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/profile.php?id=100091514563049">Facebook</a></li>
+            <li><a href="https://www.instagram.com/sandra1978diaz/?hl=es">Instagram</a></li>
+        </ul>
+
+       </section>
+       <footer>
+        <p>&copy; 2024 Personaliza tus Chapas. Todos los derechos reservados</p>
+       </footer>
+       <script src="scripts.js"></script>
+</body>
+</html>
